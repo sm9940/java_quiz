@@ -18,7 +18,6 @@ public class Quiz9 {
             count++;
             System.out.println("1과 100사이의 값을 입력하세요");
 
-
             input = s.nextInt(); //입력받은 값을 변수에 저장한다.
         if(input==answer) {
             System.out.println(count+"번째만에 맞췄습니다");
