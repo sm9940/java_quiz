@@ -7,7 +7,7 @@ public class Quiz1 {
             System.out.println(x);
         }
         char ch = 'z';
-        if(ch != ' '){
+        if(!(ch==' '||ch=='\t')){
             System.out.println(ch);
         }
         char ch1 = 'X';
@@ -31,7 +31,7 @@ public class Quiz1 {
             System.out.println(powerOn);
         }
         String str = "yes";
-        if(str=="yes"){
+        if(str.equals("yes")){
             System.out.println(str);
         }
     }}
