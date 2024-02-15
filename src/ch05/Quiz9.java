@@ -14,6 +14,7 @@ public class Quiz9 {
             for (int j = 0; j <array[i].length ; j++) {
 
                 totalSum+=array[i][j];
+                //count++; //배율 원소의 갯수만큼 카운트
             }
         }
         System.out.println(totalStudent);
