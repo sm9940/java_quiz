@@ -73,7 +73,7 @@ public class CustomerApplication {
         System.out.println("---------");
         System.out.print("핸드폰 번호: ");
         String Phone = scanner.next();
-        System.out.print("포인트 적립: ");
+        System.out.print("포인트 사용: ");
         int Point = scanner.nextInt();
         Customer account = findCustomer(Phone);
         if (account == null){
