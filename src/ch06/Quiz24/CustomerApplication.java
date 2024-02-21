@@ -102,6 +102,8 @@ public class CustomerApplication {
 
        if(Point>=2000){
            account.setPoint((int) (account.getPoint()+(Point+0.1*Point)));
+       } else {
+           account.setPoint(account.getPoint()+Point);
        }
         System.out.println("결과:적립이 완료되었습니다. 잔여 포인트: "+ account.getPoint());
     }
