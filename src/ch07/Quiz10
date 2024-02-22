@@ -1,0 +1,12 @@
+10. 다음과 같이 작성한 Computer 클래스에서 컴파일 에러가 발생했습니다. 그 이유를 설명해보세요.
+부모 클래스에서 추상메소드를 생성하면 자식 클래스에서는 무조건 추상메소드를 사용해야된다
+
+public abstract class Machine {
+   public void powerOn() { }
+   public void powerOff() { }
+   public abstract void work();
+}
+public class Computer extends Machine {
+
+}
+

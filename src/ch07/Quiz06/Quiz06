@@ -1,0 +1,22 @@
+
+6. Parent 클래스를 상속해서 Child 클래스를 다음과 같이 작성했는데, Child 생성자에서 컴파일
+에러가 발생했습니다. 그 이유와 해결 방법을 설명해보세요.
+Child 생성자가 부모클래스에서 오버라이딩하는 과정에서 Parent 생성자에 매개변수가 있기때문에
+Child 생성자 안에 super(name);을 넣어 해결해준다
+public class Parent {
+   public String name;
+
+   public Parent(String name) {
+        this.name = name;
+   }
+}
+public class Child extends Parent {
+   public int studentNo;
+
+   public Child(String name, int studentNo) {
+       this.name = name;
+       this.studentNo = studentNo;
+   }
+}
+
+
