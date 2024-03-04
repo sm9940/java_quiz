@@ -1,0 +1,12 @@
+public void method1() throws NumberFormatException, ClassNotFoundException{ … }
+
+3
+
+➊ try { method1( ); } catch (Exception e) { }
+➋ void method2( ) throws Exception { method1( ); }
+➌ try { method1( ); }
+   catch (Exception e) { }
+   catch (ClassNotFoundException e) { }
+➍ try { method1( ); }
+   catch (ClassNotFoundException e) { }
+   catch (NumberFormatException e) { }
