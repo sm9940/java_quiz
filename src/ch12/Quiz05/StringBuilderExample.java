@@ -4,16 +4,15 @@ public class StringBuilderExample {
     public static void main(String[] args) {
         String str = "";
 
+        StringBuilder sb = new StringBuilder();
 
 
         for (int i = 0; i <= 100 ; i++) {
-            str = new StringBuilder()
-                    .append(str+=i)
-                    .toString();
+           sb.append(i);
 
 
         }
-
+str = sb.toString();
         System.out.println(str);
     }
 }
